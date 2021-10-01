@@ -80,6 +80,7 @@ import { strategy as trancheStakingLP } from './tranche-staking-lp';
 import { strategy as masterchefPoolBalance } from './masterchef-pool-balance';
 import { strategy as avnBalanceOfStaked } from './avn-balance-of-staked';
 import { strategy as api } from './api';
+import { strategy as apiPost } from './api-post';
 import { strategy as xseen } from './xseen';
 import { strategy as molochAll } from './moloch-all';
 import { strategy as molochLoot } from './moloch-loot';
@@ -190,6 +191,7 @@ export default {
   'masterchef-pool-balance': masterchefPoolBalance,
   'avn-balance-of-staked': avnBalanceOfStaked,
   api,
+  apiPost,
   xseen,
   'moloch-all': molochAll,
   'moloch-loot': molochLoot,

@@ -15,19 +15,19 @@ export default async function validate(
 
   if (onlyMembers) return false;
 
-  if (minScore) {
-    const scores = await getScores(
-      space.id || space.key,
-      strategies,
-      space.network,
-      '',
-      [author]
-    );
-    const totalScore: any = scores
-      .map((score: any) => Object.values(score).reduce((a, b: any) => a + b, 0))
-      .reduce((a, b: any) => a + b, 0);
-    if (totalScore < minScore) return false;
-  }
+  // if (minScore) {
+  //   const scores = await getScores(
+  //     space.id || space.key,
+  //     strategies,
+  //     space.network,
+  //     '',
+  //     [author]
+  //   );
+  //   const totalScore: any = scores
+  //     .map((score: any) => Object.values(score).reduce((a, b: any) => a + b, 0))
+  //     .reduce((a, b: any) => a + b, 0);
+  //   if (totalScore < minScore) return false;
+  // }
 
   return true;
 }
