@@ -104,6 +104,8 @@ import { strategy as balancerDelegation } from './balancer-delegation';
 import { strategy as infinityProtocolPools } from './infinityprotocol-liquidity-pools';
 import { strategy as aaveGovernancePower } from './aave-governance-power';
 import { strategy as cake } from './cake';
+import { strategy as singleStakingVaultBalance } from './single-staking-vault-balanceof';
+import { strategy as vaultLpBalance } from './vault-token-lp-balance';
 
 export default {
   balancer,
@@ -211,5 +213,7 @@ export default {
   'balancer-delegation': balancerDelegation,
   'infinityprotocol-liquidity-pools': infinityProtocolPools,
   'aave-governance-power': aaveGovernancePower,
-  cake
+  cake,
+  'single-staking-vault-balanceof': singleStakingVaultBalance,
+  'vault-token-lp-balance': vaultLpBalance
 };
